@@ -1,0 +1,47 @@
+/* Dropdown.css */
+.select-container {
+  position: relative;
+  display: inline-block;
+  width: 150px;
+}
+
+.select {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(0, 0, 0); 
+  color: rgb(204, 112, 7);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 2px solid rgb(204, 112, 7); 
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.select:focus {
+  outline: none; 
+}
+
+.select-option {
+  background-color: rgb(0, 0, 0); 
+  color: rgb(204, 112, 7);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.select-option:hover {
+  background-color: #ff9800; 
+}
+
+/* Media Query for smaller devices */
+@media screen and (max-width: 450px) {
+  .select-container {
+    width: 100%; 
+  }
+
+  .select {
+    width: calc(100% - 20px); 
+    margin-right: 20px; 
+    margin-bottom: 1rem;
+  }
+}
