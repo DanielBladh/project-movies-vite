@@ -95,22 +95,25 @@
 
 .movie-genres {
   display: flex;
+  margin-left: 10px;
   flex-direction: row;
   gap: 10px;
   font-variant: small-caps;
   font-weight: bold;
   font-size: 18px;
-  color: #ff9800;
+  color: rgb(255, 255, 255);
 }
 
 .details a {
-  color: #ff9800;
+  margin-left: 10px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
 }
 
 .description-container {
   display: flex;
   flex-direction: column; 
-  background-color: rgba(0, 0, 0, 0.226);
+  background-color: rgba(0, 0, 0, 0.623);
   border-radius: 10px;
 }
 
@@ -120,7 +123,7 @@
 
 .movie-text,
 .production-details {
-  padding: 0.7rem;
+  margin-left: 10px;
   border-radius: 0.5rem;
 }
 
@@ -139,11 +142,11 @@
   }
 
   .production-details {
-    margin-left: 20px;
+    margin-left: 10px;
   }
 
   .detail-container .details {
-    margin-left: 20px;
+    margin-left: 10px;
   }
 
   .detail-container img {

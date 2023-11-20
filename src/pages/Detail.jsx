@@ -84,21 +84,22 @@ export default function Detail() {
                         {Math.round(movieDetails.vote_average * 10) / 10}
                       </span>
                     </h1>
-                    {movieDetails && movieDetails.imdb_id && (
-                      <a
-                        href={`https://www.imdb.com/title/${movieDetails.imdb_id}/`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        IMDb Page
-                      </a>
-                    )}
-                    <div className="movie-genres">
-                      {movieDetails.genres.map((x, index) => (
-                        <p key={index}>{x.name}</p>
-                      ))}
-                    </div>
+
                     <div className="description-container">
+                      {movieDetails && movieDetails.imdb_id && (
+                        <a
+                          href={`https://www.imdb.com/title/${movieDetails.imdb_id}/`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          IMDb Page
+                        </a>
+                      )}
+                      <div className="movie-genres">
+                        {movieDetails.genres.map((x, index) => (
+                          <p key={index}>{x.name}</p>
+                        ))}
+                      </div>
                       <div className="movie-text">
                         <p className="movie-description">
                           {movieDetails.overview}
